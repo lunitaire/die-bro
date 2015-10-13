@@ -10,7 +10,7 @@
         <header>
             <h1>Do you even Die, bro?</h1>
             <h2>The Varied Die Roller Of Epic Proportions</h2>
-            <p>Welcome to Lunitaire's dice roller. The die of many sides now rolls and it finally shows up in proper area of page. Preset die roller still not functional. In the future I have plans to allow multiple dice to be rolled of varied sides. In the far future, there'll be unicorns.</p>
+            <p>Welcome to Lunitaire's dice roller. Both die rollers now work, including functionality to roll multiple dice and remove previous rolls. Currently working on how rolls present themselves. In the future, there'll be different color themes for the overall app and the dice. Also I would like to set it up to display the dice with the set sides instead of just a circle. In the far future there will be unicorns.</p>
         </header>
     </section><br>
     <div class="content">
@@ -22,25 +22,29 @@
                 <label for="value">Die: </label>
                 <input type="text" name="value" id="dieRolled" value ="1"></input>
                 <input type="button" value="Roll the Die" id="button">
-                <br><br>
+                <input type="reset" value="Remove Rolls" id="cleton"/>
+                <br>
                 <div id ="res1"></div>
             </div>
         </section>
        <section class="wrapper">
             <div class ="container">
                 <p>Alternatively you can choose a preset die.</p>
-                    <label for="preset">Dice: </label></label>
-                    <select name="value" id="fillIn2">
-                        <option>Choose</option>
+                    <label for="value2">Dice: </label></label>
+                    <select name="value2" id="fillIn2">
+                        <option value = null>Choose</option>
                         <option value="20">D20</option>
                         <option value="12">D12</option>
                         <option value="10">D10</option>
                         <option value="8">D8</option>
                         <option value="6">D6</option>
                         <option value="4">D4</option>
-                    </select>
-                    <input type="button" value="Roll the Die" id="button">
-                <div id="res2">Notice:  this one isn't functional.</div>
+                    </select><br>
+                    <label for="value">Die: </label>
+                <input type="text" name="value" id="dieRolled2" value ="1"></input>
+                    <input type="button" value="Roll the Die" id="button2"> <input type="reset" value="Remove Rolls" id="cleton2"/>
+                    
+                <div id="res2"></div>
             </div>
         </section>
         
