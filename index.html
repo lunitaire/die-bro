@@ -26,24 +26,23 @@
         </header>
     </section><br>
     <div class="content row">
-        <section class ="wrapper col-xs-10 col-xs-offset-1 col-sm-6 col-md-4">
-            <div class ="container">
+        <section class ="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
                 <p>Please put in the number of sides and number of dice you would like to roll.</p>
-                <label for="value">Sides: </label>
-                <input type="text" name="value" id="fillIn"></input><br>
-                <label for="value">Die: </label>
-                <input type="text" name="value" id="dieRolled" value ="1"></input>
-                <input type="button" value="Roll the Die" id="button">
-                <input type="reset" value="Remove Rolls" id="cleton"/>
-                <br>
+                <div class="form-group">
+                    <label class="sr-only" for="value">Sides: </label>
+                    <input type="text" name="value" id="fillIn" placeholder="Sides of Die" class="form-control"></input><br>
+                    <label class="sr-only" for="value">Die: </label>
+                    <input type="text" name="value" id="dieRolled" placeholder="Number of Die" class="form-control"></input>
+                    <br>
+                    <input type="button" value="Roll the Die" id="button" class="btn btn-primary btn-block">
+                    <input type="reset" value="Remove Rolls" id="cleton" class="btn btn-warning btn-sm btn-block"/>
+                </div>
                 <div id ="res1"></div>
-            </div>
         </section>
-       <section class="wrapper col-xs-10 col-xs-offset-1 col-sm-6 col-md-3">
-            <div class ="container">
+       <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
                 <p>Alternatively you can choose a preset die.</p>
                     <label for="value2">Dice: </label></label>
-                    <select name="value2" id="fillIn2">
+                    <select name="value2" id="fillIn2" class="form-control">
                         <option value = null>Choose</option>
                         <option value="20">D20</option>
                         <option value="12">D12</option>
@@ -52,17 +51,16 @@
                         <option value="6">D6</option>
                         <option value="4">D4</option>
                     </select><br>
-                    <label for="value">Die: </label>
-                <input type="text" name="value" id="dieRolled2" value ="1"></input>
-                    <input type="button" value="Roll the Die" id="button2"> <input type="reset" value="Remove Rolls" id="cleton2"/>
+                    <label class="sr-only" for="value">Die: </label>
+                <input type="text" name="value" id="dieRolled2" placeholder="Number of Die" class="form-control"></input> 
+                <br>
+                    <input type="button" value="Roll the Die" id="button2"  class="btn btn-primary btn-block"> <input type="reset" value="Remove Rolls" id="cleton2"  class="btn btn-warning btn-block btn-sm"/>
                     
                 <div id="res2"></div>
-            </div>
         </section> 
-        <section class="wrapper col-xs-10 col-sm-8 col-md-3 ">
-            <div class="container">
+        <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-2">
                 <img src="http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png" alt="found on google, made by puqqie"><p> Unicorns go here. Waiting on a beautiful unicorn future.</p>
-            </div>
+            <input type="button" value="Summon Unicorns" id="sumUni" class="btn btn-success btn-lg btn-block"> <input type="reset" value="Banish Unicorns" id="banUni"  class="btn btn-danger btn-sm btn-block"/>
         </section>
     </div>
     
