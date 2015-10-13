@@ -49,8 +49,7 @@ footer p {
 
 }
 .wrapper{
-//    float: left;
-//    max-width:40%;
+    float: left;
 }
 .container{
     margin: 10px 10px;
