@@ -31,8 +31,13 @@ function dicePrint() {
 function checkscript() {
     box = document.getElementById("fillIn");
     dice = document.getElementById("dieRolled");
-    if (box.value) {
-        if (dice.value<=100){
+    if (isNaN(box.value)){
+        alert('Make sure it\'s a number');
+    } else if (isNaN(dice.value)) {
+        alert('Make sure it\'s a number');
+    } else if (box.value) {
+        if (dice.value){
+            if (dice.value<=100){
             diceCount = dice.value;
             diceValue = box.value;
             currentDiv = document.getElementById("res1");
@@ -40,6 +45,9 @@ function checkscript() {
         } else {
             alert('Please keep to 100 or less at a time!');
             dice.focus();
+        }
+        } else {
+            alert('You haven\'t filled in the number!');
         }
     } else {
         alert('You haven\'t filled in ' + box.name + '!');
@@ -49,14 +57,16 @@ function checkscript() {
 function checkscript2() {
     box2 = document.getElementById("fillIn2");
     dice = document.getElementById("dieRolled2");
-    if (box2.value) {
+    if (box2.value==="-1"){
+        alert('You haven\'t filled in which die!');
+        box.focus();
+    } else if (dice.value="-1") {
+        alert('You haven\'t filled in how many!');
+    } else {
         diceValue = box2.value;
         currentDiv = document.getElementById("res2");
         diceCount=dice.value;
         dicePrint()
-    } else {
-        alert('You haven\'t filled in ' + box2.name + '!');
-        box.focus();
     }
 }
 //clear dice rolls
