@@ -1,5 +1,5 @@
 h2 {
-    color: black; 
+    color: red; 
 }
 p {
     color: whitesmoke;
@@ -8,27 +8,27 @@ form {
     color: #A7FCF4;
 } 
 .top{
-    background-color: dimgray;
-    color: #A7FCF4;
+    background-color: black;
+    color: red;
 }
 header h1 {
-    color: black; 
-    text-shadow: 1px 2px darkred; 
+    color: whitesmoke; 
+    text-shadow: 1px 2px red; 
 }
 footer p {
         background-color: dimgray;
     color: whitesmoke;
 }
 .wrapper{
-    background-color: darkgray;
+    background-color: #303030;
 }
-li {
-    color: mediumturquoise;
-    background-color: paleturquoise;
+.diceColor{
+    color: red;
+    background-color: black;
 }
 div {
-    color: ;
+    color: red;
 }
 body{
-    background-color: black;
+    background-color: #4D4A4A;
 }

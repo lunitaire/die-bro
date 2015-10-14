@@ -21,9 +21,15 @@ function dicePrint() {
     newUl.appendChild(newContent);
     for (i = 0; i < diceCount; i += 1) {
         result = getRandomNumber();
+        //var newLi = document.createTextNode('<li class="dice" data-type="');
+        
         var newLi = document.createElement('li');
-        // Set the value to what you want
-        newLi.innerHTML = result;
+        newClass = "n" + diceValue;
+        newLi.className="dice " + newClass;
+        var newLi2 = document.createElement('li');
+        newLi2.className="diceColor";
+        newLi2.innerHTML = result;
+        newLi.appendChild(newLi2);
         newUl.appendChild(newLi);
     }
     currentDiv.appendChild(newUl);
@@ -101,6 +107,20 @@ document.getElementById("cleton").onclick = removeRolls1;
 document.getElementById("cleton2").onclick = removeRolls2;
 document.getElementById("sumUni").onclick = summonUnicorns;
 document.getElementById("banUni").onclick = banUnicorns;
+
+
+$('#uniDie').click(function() {
+    $('.diceColor').removeClass("mothDice nesDice fooDice").addClass('uniDice');
+});
+$('#mothDie').click(function() {
+    $('.diceColor').removeClass("uniDice nesDice fooDice").addClass('mothDice');
+});
+$('#nesDie').click(function() {
+    $('.diceColor').removeClass("mothDice uniDice fooDice").addClass('nesDice');
+});
+$('#fooDie').click(function() {
+    $('.diceColor').removeClass("mothDice uniDice nesDice").addClass('fooDice');
+});
 
 ///////////changestylesheets
 // *** TO BE CUSTOMISED ***
