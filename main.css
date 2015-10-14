@@ -1,3 +1,61 @@
+h1 {
+    font: 30px/18px arial, sans-serif; 
+}
+h2 {font: 16px arial, sans-serif; 
+    text-align: center; 
+    font-variant: small-caps;
+}
+p {
+    font: 12px/14px arial, sans-serif;
+} 
+form {
+    font: 12px/10px arial, sans-serif;
+} 
+header {
+    max-width: 60%;
+    margin: auto;
+}
+footer {
+    text-align: center; 
+    margin: auto;
+    padding: 20px 0;
+    clear: left;
+}
+.top{
+    padding: 10px 0px 5px 0px;
+}
+header h1 {
+    font: 30px/18px arial, sans-serif;  
+    text-align: center; 
+    padding: 10px 0px;
+}
+footer p {
+        padding: 10px;
+}
+.wrapper{
+    padding: 10px;
+}
+li {
+    display:inline-block;
+    list-style: none;
+    padding: 2px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+}
+div {
+    font: 12px/14px arial, sans-serif;
+    padding: 2px;
+
+}
+
+/*
+Below is for column heights.
+*/
 .inside-full-height {
   /*
   // if you want to give content full height give him height: 100%;

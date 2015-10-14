@@ -1,70 +1,32 @@
-
-h1 {
-    font: 30px/18px arial, sans-serif; 
-}
-h2 {font: 16px arial, sans-serif; 
+h2 {
     color: darkorange; 
-    text-align: center; 
-    font-variant: small-caps;
 }
 p {
-    font: 12px/14px arial, sans-serif;
     color:lightyellow;
 } 
 form {
-    font: 12px/10px arial, sans-serif;
     color: lightyellow;
 } 
-header {
-    max-width: 60%;
-    margin: auto;
-
-}
 .top{
     background-color: darkred;
-    padding: 10px 0px 5px 0px;
     color: lightyellow;
 }
 header h1 {
-    font: 30px/18px arial, sans-serif; 
     color: orangered; 
-    text-align: center; 
     text-shadow: 1px 2px black; 
-    padding: 10px 0px;
-}
-footer {
-    text-align: center; 
-    margin: auto;
-    padding: 20px 0;
-    clear: left;
-
 }
 footer p {
         background-color: lightcoral;
-        padding: 10px;
 }
 .wrapper{
-    padding: 10px;
     background-color: firebrick;
 }
 li {
     color: orangered;
-    display:inline-block;
-    list-style: none;
-    padding: 2px;
-    box-sizing: border-box;
-    padding-top: 10px;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 5px;
     background-color: black;
 }
 div {
     color: orange;
-    font: 12px/14px arial, sans-serif;
-    padding: 2px;
 }
 body{
     background-color: #000;
