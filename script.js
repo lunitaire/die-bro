@@ -107,7 +107,7 @@ document.getElementById("banUni").onclick = banUnicorns;
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
-var style_domain = "" ;
+var style_domain = "www.atrian.xyz" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
