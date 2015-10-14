@@ -4,16 +4,44 @@ var dice;
 var diceCount;
 var diceValue;
 var currentDiv;
+var result;
+var i;
 
+
+//actual die roller
+var getRandomNumber = function () {
+    var randomNumber = Math.floor(Math.random() * diceValue) + 1;
+    return randomNumber;
+};
+// check for a value
+function dicePrint() {
+    var newUl = document.createElement('ul');
+    var newContent = document.createTextNode("Results: ");
+    //newUl.innerHTML = 'Results: <br>' ;
+    newUl.appendChild(newContent);
+    for (i = 0; i < diceCount; i += 1) {
+        result = getRandomNumber();
+        var newLi = document.createElement('li');
+        // Set the value to what you want
+        newLi.innerHTML = result;
+        newUl.appendChild(newLi);
+    }
+    currentDiv.appendChild(newUl);
+}
 function checkscript() {
     box = document.getElementById("fillIn");
     dice = document.getElementById("dieRolled");
-    if (box.value){
-        diceCount = dice.value;
+    if (box.value) {
+        if (dice.value<=100){
+            diceCount = dice.value;
+        } else {
+            alert('Please keep to 100 or less at a time!');
+            dice.focus();
+        }
         diceValue = box.value;
         currentDiv = document.getElementById("res1");
         dicePrint();
-    }else {
+    } else {
         alert('You haven\'t filled in ' + box.name + '!');
         box.focus();
     }
@@ -21,65 +49,42 @@ function checkscript() {
 function checkscript2() {
     box2 = document.getElementById("fillIn2");
     dice = document.getElementById("dieRolled2");
-    if (box2.value){
+    if (box2.value) {
         diceValue = box2.value;
         currentDiv = document.getElementById("res2");
         diceCount=dice.value;
         dicePrint()
-    }else {
+    } else {
         alert('You haven\'t filled in ' + box2.name + '!');
         box.focus();
     }
 }
-//actual die roller
-    var getRandomNumber = function() {
-    	var randomNumber = []; 
-        randomNumber = Math.floor( Math.random() * diceValue ) + 1; 
-        return randomNumber;
-    }
-// check for a value
-    function dicePrint () {
-        var newUl = document.createElement('ul');
-        var newContent = document.createTextNode("Results: ");
-        //newUl.innerHTML = 'Results: <br>' ;
-        newUl.appendChild(newContent);
-        for (var i=0;i < diceCount; i+=1){
-            var result = getRandomNumber();
-            var newLi = document.createElement('li');
-            // Set the value to what you want
-            newLi.innerHTML = result ;
-            newUl.appendChild(newLi);
-            
-        }
-        currentDiv.appendChild(newUl);
-    } 
 //clear dice rolls
-    function clearDice(){
+    function clearDice() {
         while (currentDiv.firstChild) {
             currentDiv.removeChild(currentDiv.firstChild);
         }
     }
-    function removeRolls1(){
+    function removeRolls1() {
         currentDiv = document.getElementById("res1");
         clearDice();
     }
-    function removeRolls2(){
+    function removeRolls2() {
         currentDiv = document.getElementById("res2");
         clearDice();
     }
-    function summonUnicorns(){
-        currentDiv = document.getElementById("unicorn");
-        var moarUni = document.createElement("img");
-        moarUni.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
-        moarUni.setAttribute('alt',"found on google, made by puqqie");
-        currentDiv.appendChild(moarUni);
-    }
-
-function banUnicorns(){
+function summonUnicorns() {
+    currentDiv = document.getElementById("unicorn");
+    var moarUni = document.createElement("img");
+    moarUni.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
+    moarUni.setAttribute('alt',"found on google, made by puqqie");
+    currentDiv.appendChild(moarUni);
+}
+function banUnicorns() {
         currentDiv = document.getElementById("unicorn");
         clearDice();
     }
-
+//click all the things
 document.getElementById("button").onclick = checkscript;
 document.getElementById("button2").onclick = checkscript2;
 document.getElementById("cleton").onclick = removeRolls1;

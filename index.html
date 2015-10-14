@@ -34,7 +34,7 @@
 <div class="container-fluid">
         </section><br>
         <div class="content row">
-            <section class ="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-4">
+            <section class ="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
                     <p>Please put in the number of sides and number of dice you would like to roll.</p>
                     <div class="form-group">
                         <label class="sr-only" for="value">Sides: </label>
@@ -47,12 +47,12 @@
                     </div>
                     <div id ="res1"></div>
             </section>
-        <div class="spacer"><br></div>
-           <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-2 col-lg-4">
+
+           <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
                     <p>Alternatively you can choose a preset die.</p>
                     <label class="sr-only" for="value2">Die</label>
                         <select name="value2" id="fillIn2" class="form-control">
-                            <option value = null>Choose</option>
+                            <option value = null>Type of Die</option>
                             <option value="20">D20</option>
                             <option value="12">D12</option>
                             <option value="10">D10</option>
@@ -61,17 +61,30 @@
                             <option value="4">D4</option>
                         </select>
 
-                    <label class="sr-only" for="value">Die: </label>
-                    <input type="text" name="value" id="dieRolled2" placeholder="Number of Die" class="form-control"></input> 
+                    <label class="sr-only" for="value">Number of Die</label>
+                    <select name="value" id="dieRolled2" class="form-control">
+                            <option value = null>How Many</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                    </select>
+
                     <br>
                         <input type="button" value="Roll the Die" id="button2"  class="btn btn-primary btn-block"> <input type="reset" value="Remove Rolls" id="cleton2"  class="btn btn-warning btn-block btn-sm"/>
 
                     <div id="res2"></div>
             </section> 
-        </div>
-        <div class=""><br></div>
-         <div class="content row">   
-            <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-10 col-md-offset-1 col-lg-10">
+
+            <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-10 col-md-offset-1 col-lg-3">
                 <p> Unicorns go here. Waiting on a beautiful unicorn future.</p>
                 <input type="button" href="#unicorn" value="Summon Unicorns" id="sumUni" class="btn btn-success btn-lg btn-block"> 
                 <input type="reset" value="Banish Unicorns" id="banUni"  class="btn btn-danger btn-sm btn-block" />
