@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Do you even Die, bro?</title>
-	<link rel='stylesheet' href='style.css'/>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,61 +16,79 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel='stylesheet'  type="text/css" href='unicorn.css' title="unicorn"/>
+    <link rel='alt stylesheet'  type="text/css" href='foo-dog.css' title="foo-dog" />
 </head>
 <body>
-    <section class ="top" >
-        <header>
-            <h1>Do you even Die, bro?</h1>
-            <h2>The Varied Die Roller Of Epic Proportions</h2>
-            <p>Welcome to Lunitaire's dice roller. Both die rollers now work, including functionality to roll multiple dice and remove previous rolls. Currently working on how rolls present themselves. In the future, there'll be different color themes for the overall app and the dice. Also I would like to set it up to display the dice with the set sides instead of just a circle. In the far future there will be unicorns.</p>
-        </header>
-    </section><br>
-    <div class="content row">
-        <section class ="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
-                <p>Please put in the number of sides and number of dice you would like to roll.</p>
-                <div class="form-group">
-                    <label class="sr-only" for="value">Sides: </label>
-                    <input type="text" name="value" id="fillIn" placeholder="Sides of Die" class="form-control"></input><br>
-                    <label class="sr-only" for="value">Die: </label>
-                    <input type="text" name="value" id="dieRolled" placeholder="Number of Die" class="form-control"></input>
-                    <br>
-                    <input type="button" value="Roll the Die" id="button" class="btn btn-primary btn-block">
-                    <input type="reset" value="Remove Rolls" id="cleton" class="btn btn-warning btn-sm btn-block"/>
-                </div>
-                <div id ="res1"></div>
-        </section>
-       <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-3">
-                <p>Alternatively you can choose a preset die.</p>
-                    <label for="value2">Dice: </label></label>
-                    <select name="value2" id="fillIn2" class="form-control">
-                        <option value = null>Choose</option>
-                        <option value="20">D20</option>
-                        <option value="12">D12</option>
-                        <option value="10">D10</option>
-                        <option value="8">D8</option>
-                        <option value="6">D6</option>
-                        <option value="4">D4</option>
-                    </select><br>
-                    <label class="sr-only" for="value">Die: </label>
-                <input type="text" name="value" id="dieRolled2" placeholder="Number of Die" class="form-control"></input> 
-                <br>
-                    <input type="button" value="Roll the Die" id="button2"  class="btn btn-primary btn-block"> <input type="reset" value="Remove Rolls" id="cleton2"  class="btn btn-warning btn-block btn-sm"/>
-                    
-                <div id="res2"></div>
-        </section> 
-        <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-2">
-                <img src="http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png" alt="found on google, made by puqqie"><p> Unicorns go here. Waiting on a beautiful unicorn future.</p>
-            <input type="button" value="Summon Unicorns" id="sumUni" class="btn btn-success btn-lg btn-block"> <input type="reset" value="Banish Unicorns" id="banUni"  class="btn btn-danger btn-sm btn-block"/>
-        </section>
-    </div>
     
-    <section class="bottom">
-        <footer>
-            <p>Something something darkside 2015. Created from scratch by Atrian Wagner.</p>
-        </footer>
-    </section>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src='script.js'></script>
+        <section class ="top" >
+            <header>
+                <h1>Do you even Die, bro?</h1>
+                <h2>The Varied Die Roller Of Epic Proportions</h2>
+                <p>Welcome to Lunitaire's dice roller. Both die rollers now work, including functionality to roll multiple dice and remove previous rolls. Currently working on how rolls present themselves. In the future, there'll be different color themes for the overall app and the dice. Also I would like to set it up to display the dice with the set sides instead of just a circle. In the far future there will be unicorns.</p>
+                <form class="form-group">
+                    <input type="submit" onclick="switch_style('unicorn');return false;" name="theme" value="Unicorn Theme" id="uniTheme" class="btn btn-sm btn-primary">
+                    <input type="submit" onclick="switch_style('foo-dog');return false;" name="theme" value="Foo-dog Theme" id="fooTheme" class="btn btn-sm btn-primary">
+                </form>
+            </header>
+<div class="container-fluid">
+        </section><br>
+        <div class="content row">
+            <section class ="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-1 col-lg-4">
+                    <p>Please put in the number of sides and number of dice you would like to roll.</p>
+                    <div class="form-group">
+                        <label class="sr-only" for="value">Sides: </label>
+                        <input type="text" name="value" id="fillIn" placeholder="Sides of Die" class="form-control"></input><br>
+                        <label class="sr-only" for="value">Die: </label>
+                        <input type="text" name="value" id="dieRolled" placeholder="Number of Die" class="form-control"></input>
+                        <br>
+                        <input type="button" value="Roll the Die" id="button" class="btn btn-primary btn-block">
+                        <input type="reset" value="Remove Rolls" id="cleton" class="btn btn-warning btn-sm btn-block"/>
+                    </div>
+                    <div id ="res1"></div>
+            </section>
+        <div class="spacer"><br></div>
+           <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-2 col-lg-4">
+                    <p>Alternatively you can choose a preset die.</p>
+                    <label class="sr-only" for="value2">Die</label>
+                        <select name="value2" id="fillIn2" class="form-control">
+                            <option value = null>Choose</option>
+                            <option value="20">D20</option>
+                            <option value="12">D12</option>
+                            <option value="10">D10</option>
+                            <option value="8">D8</option>
+                            <option value="6">D6</option>
+                            <option value="4">D4</option>
+                        </select>
+
+                    <label class="sr-only" for="value">Die: </label>
+                    <input type="text" name="value" id="dieRolled2" placeholder="Number of Die" class="form-control"></input> 
+                    <br>
+                        <input type="button" value="Roll the Die" id="button2"  class="btn btn-primary btn-block"> <input type="reset" value="Remove Rolls" id="cleton2"  class="btn btn-warning btn-block btn-sm"/>
+
+                    <div id="res2"></div>
+            </section> 
+        </div>
+        <div class=""><br></div>
+         <div class="content row">   
+            <section class="wrapper col-xs-8 col-xs-offset-2 col-sm-8 col-md-10 col-md-offset-1 col-lg-10">
+                <p> Unicorns go here. Waiting on a beautiful unicorn future.</p>
+                <input type="button" href="#unicorn" value="Summon Unicorns" id="sumUni" class="btn btn-success btn-lg btn-block"> 
+                <input type="reset" value="Banish Unicorns" id="banUni"  class="btn btn-danger btn-sm btn-block" />
+                <div id="unicorn" >
+
+                </div>
+            </section>
+        </div>
+
+        <section class="row">
+            <footer class="col-xs-8 col-xs-offset-2 col-sm-8 col-md-10 col-md-offset-1">
+                <p>Something something darkside 2015. Created from scratch by Atrian Wagner.</p>
+            </footer>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src='script.js'></script>
+    </div>
 </body>
 </html>
