@@ -60,7 +60,7 @@ function checkscript2() {
     if (box2.value==="-1"){
         alert('You haven\'t filled in which die!');
         box.focus();
-    } else if (dice.value="-1") {
+    } else if (dice.value==="-1") {
         alert('You haven\'t filled in how many!');
     } else {
         diceValue = box2.value;
