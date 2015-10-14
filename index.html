@@ -16,24 +16,44 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel='stylesheet'  href='main.css'>
+
     <link rel='stylesheet'  type="text/css" href='unicorn.css' title="unicorn"/>
     <link rel='alt stylesheet'  type="text/css" href='foo-dog.css' title="foo-dog" />
     <link rel='alt stylesheet'  type="text/css" href='nessie.css' title="nessie" />
     <link rel='alt stylesheet'  type="text/css" href='mothman.css' title="mothman" />
+        
+    <link rel='stylesheet'  href='main.css'>
 </head>
 <body>
     <section class ="top" >
         <header>
             <h1>Do you even Die, bro?</h1>
             <h2>The Varied Die Roller Of Mythic Proportions</h2>
-            <p>Welcome to my dice roller. Both die rollers now work, including functionality to roll multiple dice and remove previous rolls. Recently added themes. Currently working on how rolls present themselves. In the future, there'll be different color options the dice. Also I would like to set it up to display the dice with the set sides instead of just a circle. In the far future there will be unicorns.</p>
-            <form class="form-group">
-                <input type="submit" onclick="switch_style('unicorn');return false;" name="theme" value="Unicorn Theme" id="uniTheme" class="btn btn-sm btn-primary">
-                <input type="submit" onclick="switch_style('foo-dog');return false;" name="theme" value="Foo-dog Theme" id="fooTheme" class="btn btn-sm btn-primary">
-                <input type="submit" onclick="switch_style('nessie');return false;" name="theme" value="Nessie Theme" id="nessieTheme" class="btn btn-sm btn-primary">
-                <input type="submit" onclick="switch_style('mothman');return false;" name="theme" value="Mothman Theme" id="mothTheme" class="btn btn-sm btn-primary">
-            </form>
+            <p>Welcome. This is a work in progress. Both die rollers now work, including functionality to roll multiple dice and remove previous rolls. Recently added themes, including separate selection for just die. Currently working on how die rolls present themselves, inclduing displaying the dice with the set sides instead of just a circle. In the far future there will be unicorns.</p>
+            <div class="nav nav-tabs nav-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Theme Selection <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="theme"><input type="submit" onclick="switch_style('unicorn');return false;" name="theme" value="Unicorn Theme" id="uniTheme" class="btn-link"></li>
+                        <li class="theme"><input type="submit" onclick="switch_style('foo-dog');return false;" name="theme" value="Foo-dog Theme" id="fooTheme" class="btn-link"></li>
+                        <li class="theme"><input type="submit" onclick="switch_style('nessie');return false;" name="theme" value="Nessie Theme" id="nessieTheme" class="btn-link"></li>
+                        <li class="theme"><input type="submit" onclick="switch_style('mothman');return false;" name="theme" value="Mothman Theme" id="mothTheme" class="btn-link"></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Die <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="theme"><input type="submit" name="theme" value="Unicorn Die" id="uniDie" class="btn-link"></li>
+                        <li class="theme"><input type="submit" name="theme" value="Foo-dog Die" id="fooDie" class="btn-link"></li>
+                        <li class="theme"><input type="submit" name="theme" value="Nessie Die" id="nesDie" class="btn-link"></li>
+                        <li class="theme"><input type="submit" name="theme" value="Mothman Die" id="mothDie" class="btn-link"></li>
+                    </ul>
+                </div>
+            </div>
         </header>
     </section>
     
@@ -88,7 +108,8 @@
                         <input type="button" value="Roll the Die" id="button2"  class="btn btn-primary btn-block">  
                         <input type="reset" value="Remove Rolls" id="cleton2"  class="btn btn-warning btn-block btn-sm"/>
                     </div>
-                    <div id="res2"></div>
+                    <div id="res2" >
+                   </div>
                 </section> 
             </div>
             

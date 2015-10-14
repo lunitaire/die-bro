@@ -21,9 +21,9 @@ footer p {
 .wrapper{
     background-color: lightseagreen;
 }
-li {
+.diceColor{
     color: aqua;
-    background-color: violetred;
+   background-color: violetred; 
 }
 div {
     color: pink;
