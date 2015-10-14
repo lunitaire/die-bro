@@ -1,18 +1,19 @@
+
 h1 {
     font: 30px/18px arial, sans-serif; 
 }
-h2 {font: 16px/4px arial, sans-serif; 
-    color: azure; 
+h2 {font: 16px arial, sans-serif; 
+    color: darkorange; 
     text-align: center; 
     font-variant: small-caps;
 }
 p {
     font: 12px/14px arial, sans-serif;
-    color:azure;
+    color:lightyellow;
 } 
 form {
     font: 12px/10px arial, sans-serif;
-    color: azure;
+    color: lightyellow;
 } 
 header {
     max-width: 60%;
@@ -20,20 +21,18 @@ header {
 
 }
 .top{
-    background-color: darkturquoise;
+    background-color: darkred;
     padding: 10px 0px 5px 0px;
-    color: azure;
+    color: lightyellow;
 }
 header h1 {
     font: 30px/18px arial, sans-serif; 
-    color: paleturquoise; 
+    color: orangered; 
     text-align: center; 
-    text-shadow: 1px 2px violetred; 
-    background-color: ;
+    text-shadow: 1px 2px black; 
     padding: 10px 0px;
 }
 footer {
-    max-width: 60%;
     text-align: center; 
     margin: auto;
     padding: 20px 0;
@@ -41,22 +40,17 @@ footer {
 
 }
 footer p {
-        background-color: teal;
+        background-color: lightcoral;
         padding: 10px;
-}
-.bottom{
-    margin: auto;
-
 }
 .wrapper{
     float: left;
-        margin: 10px 10px;
-    padding: 20px;
-    background-color: lightseagreen;
+    padding: 10px;
+    background-color: firebrick;
     display: inline-block;
 }
 li {
-    color: aqua;
+    color: orangered;
     display:inline-block;
     list-style: none;
     padding: 2px;
@@ -67,10 +61,13 @@ li {
     height: 30px;
     border-radius: 50%;
     margin: 5px;
-    background-color: violetred;
+    background-color: black;
 }
 div {
-    color: pink;
+    color: orange;
     font: 12px/14px arial, sans-serif;
     padding: 2px;
+}
+body{
+    background-color: #000;
 }
