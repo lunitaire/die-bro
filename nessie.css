@@ -8,11 +8,11 @@ form {
     color: #A7FCF4;
 } 
 .top{
-    background-color: #0D364D;
+    background-color: #031D29;
     color: #A7FCF4;
 }
 header h1 {
-    color: #72EDB4; 
+    color: aquamarine; 
     text-shadow: 1px 2px #A63BFF; 
 }
 footer p {
@@ -23,12 +23,12 @@ footer p {
     background-color: mediumturquoise;
 }
 li {
-    color: mediumturquoise;
+    color: mediumseagreen;
     background-color: paleturquoise;
 }
 div {
     color: ;
 }
 body{
-    background-color: aquamarine;
+    background-color: #0D364D;
 }
