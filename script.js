@@ -34,13 +34,13 @@ function checkscript() {
     if (box.value) {
         if (dice.value<=100){
             diceCount = dice.value;
+            diceValue = box.value;
+            currentDiv = document.getElementById("res1");
+            dicePrint();
         } else {
             alert('Please keep to 100 or less at a time!');
             dice.focus();
         }
-        diceValue = box.value;
-        currentDiv = document.getElementById("res1");
-        dicePrint();
     } else {
         alert('You haven\'t filled in ' + box.name + '!');
         box.focus();

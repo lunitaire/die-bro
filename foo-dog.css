@@ -44,10 +44,8 @@ footer p {
         padding: 10px;
 }
 .wrapper{
-    float: left;
     padding: 10px;
     background-color: firebrick;
-    display: inline-block;
 }
 li {
     color: orangered;
