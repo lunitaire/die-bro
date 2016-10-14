@@ -1,11 +1,4 @@
-var box;
-var box2;
-var dice;
-var diceCount;
-var diceValue;
-var currentDiv;
-var result;
-var i;
+var box, box2, dice, diceCount, diceValue, currentDiv, result;
 
 
 //actual die roller
@@ -22,7 +15,7 @@ function dicePrint() {
     for (i = 0; i < diceCount; i += 1) {
         result = getRandomNumber();
         //var newLi = document.createTextNode('<li class="dice" data-type="');
-        
+
         var newLi = document.createElement('li');
         newClass = "n" + diceValue;
         newLi.className="dice " + newClass;
@@ -89,15 +82,15 @@ function checkscript2() {
         currentDiv = document.getElementById("res2");
         clearDice();
     }
-function summonUnicorns() {
-    currentDiv = document.getElementById("unicorn");
-    var moarUni = document.createElement("img");
-    moarUni.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
-    moarUni.setAttribute('alt',"found on google, made by puqqie");
-    currentDiv.appendChild(moarUni);
+function summonMonsters() {
+    currentDiv = document.getElementById("monster");
+    var moarMon = document.createElement("img");
+    moarMon.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
+    moarMon.setAttribute('alt',"found on google, made by puqqie");
+    currentDiv.appendChild(moarMon);
 }
-function banUnicorns() {
-        currentDiv = document.getElementById("unicorn");
+function banMonsters() {
+        currentDiv = document.getElementById("monster");
         clearDice();
     }
 //click all the things
@@ -105,8 +98,8 @@ document.getElementById("button").onclick = checkscript;
 document.getElementById("button2").onclick = checkscript2;
 document.getElementById("cleton").onclick = removeRolls1;
 document.getElementById("cleton2").onclick = removeRolls2;
-document.getElementById("sumUni").onclick = summonUnicorns;
-document.getElementById("banUni").onclick = banUnicorns;
+document.getElementById("sumMon").onclick = summonMonsters;
+document.getElementById("banMon").onclick = banMonsters;
 
 
 $('#uniDie').click(function() {
@@ -183,8 +176,3 @@ function get_cookie ( cookie_name )
     }
     return '' ;
 }
-
-
-
-
-
