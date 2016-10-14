@@ -96,10 +96,13 @@ function summonMonsters() {
     currentDiv.appendChild(moarMon);
     // Add Monster HP
     // Add Monster Iniative
+    // Use generator to randomnize the monster type and pull correct image
+    // Tie each roll to a number in order to allow removal
 }
 function banMonsters() {
-        currentDiv = document.getElementById("monster");
-        clearDice();
+      // Pull specific roll based on removal button
+      currentDiv = document.getElementById("monster");
+      clearDice();
 }
 
 // click all the things
