@@ -1,12 +1,13 @@
 var box, box2, dice, diceCount, diceValue, currentDiv, result;
 
 
-//actual die roller
+// number generator
 var getRandomNumber = function () {
     var randomNumber = Math.floor(Math.random() * diceValue) + 1;
     return randomNumber;
 };
-// check for a value
+
+// dice creation
 function dicePrint() {
     var newUl = document.createElement('ul');
     var newContent = document.createTextNode("Results: ");
@@ -27,6 +28,8 @@ function dicePrint() {
     }
     currentDiv.appendChild(newUl);
 }
+
+// check submissions
 function checkscript() {
     box = document.getElementById("fillIn");
     dice = document.getElementById("dieRolled");
@@ -68,20 +71,23 @@ function checkscript2() {
         dicePrint()
     }
 }
-//clear dice rolls
-    function clearDice() {
-        while (currentDiv.firstChild) {
-            currentDiv.removeChild(currentDiv.firstChild);
-        }
+
+// clear dice rolls
+function clearDice() {
+    while (currentDiv.firstChild) {
+        currentDiv.removeChild(currentDiv.firstChild);
     }
-    function removeRolls1() {
-        currentDiv = document.getElementById("res1");
-        clearDice();
-    }
-    function removeRolls2() {
-        currentDiv = document.getElementById("res2");
-        clearDice();
-    }
+}
+function removeRolls1() {
+    currentDiv = document.getElementById("res1");
+    clearDice();
+}
+function removeRolls2() {
+    currentDiv = document.getElementById("res2");
+    clearDice();
+}
+
+// Monsters be here.
 function summonMonsters() {
     currentDiv = document.getElementById("monster");
     var moarMon = document.createElement("img");
@@ -92,8 +98,9 @@ function summonMonsters() {
 function banMonsters() {
         currentDiv = document.getElementById("monster");
         clearDice();
-    }
-//click all the things
+}
+
+// click all the things
 document.getElementById("button").onclick = checkscript;
 document.getElementById("button2").onclick = checkscript2;
 document.getElementById("cleton").onclick = removeRolls1;
@@ -101,7 +108,7 @@ document.getElementById("cleton2").onclick = removeRolls2;
 document.getElementById("sumMon").onclick = summonMonsters;
 document.getElementById("banMon").onclick = banMonsters;
 
-
+// dice themes
 $('#uniDie').click(function() {
     $('.diceColor').removeClass("mothDice nesDice fooDice").addClass('uniDice');
 });
