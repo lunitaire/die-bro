@@ -53,6 +53,7 @@
                         <li class="theme"><input type="submit" name="theme" value="Mothman Die" id="mothDie" class="btn-link"></li>
                     </ul>
                 </div>
+                <!-- Add About Button -->
             </div>
         </header>
     </section>
@@ -116,6 +117,17 @@
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-md-4 col-md-offset-0 col-md-height col-lg-3 col-lg-height">
                 <section class="wrapper inside-full-height">
                     <div class="alert alert-info" role="alert">Monsters can be summoned here.</div>
+                    <div class="form-group">
+                        <label class="sr-only" for="value3">Monster</label>
+                        <select name="value3" id="fillIn3" class="form-control">
+                            <option value="-1">Monster Level</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                            <option value="6">Six</option>
+                        </select>
                     <input type="button" href="#monster" value="Summon Monsters" id="sumMon" class="btn btn-success btn-lg btn-block">
                     <input type="reset" value="Banish Monsters" id="banMon"  class="btn btn-danger btn-sm btn-block" />
                     <div id="monster"></div>

@@ -68,7 +68,7 @@ function checkscript2() {
         diceValue = box2.value;
         currentDiv = document.getElementById("res2");
         diceCount=dice.value;
-        dicePrint()
+        dicePrint();
     }
 }
 
@@ -94,6 +94,8 @@ function summonMonsters() {
     moarMon.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
     moarMon.setAttribute('alt',"found on google, made by puqqie");
     currentDiv.appendChild(moarMon);
+    // Add Monster HP
+    // Add Monster Iniative
 }
 function banMonsters() {
         currentDiv = document.getElementById("monster");
@@ -108,7 +110,7 @@ document.getElementById("cleton2").onclick = removeRolls2;
 document.getElementById("sumMon").onclick = summonMonsters;
 document.getElementById("banMon").onclick = banMonsters;
 
-// dice themes
+// dice themesfgjhkdl
 $('#uniDie').click(function() {
     $('.diceColor').removeClass("mothDice nesDice fooDice").addClass('uniDice');
 });
