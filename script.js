@@ -1,4 +1,4 @@
-var box, box2, dice, diceCount, diceValue, currentDiv, result;
+var box, box2, dice, diceCount, diceValue, currentDiv, result, init, hp;
 
 // number generator
 var getRandomNumber = function () {
@@ -59,7 +59,7 @@ function checkscript2() {
     dice = document.getElementById("dieRolled2");
     if (box2.value==="-1"){
         alert('You haven\'t filled in which die!');
-        box.focus();
+        box2.focus();
     } else if (dice.value==="-1") {
         alert('You haven\'t filled in how many!');
     } else {
@@ -87,15 +87,26 @@ function removeRolls2() {
 
 // Monsters be here.
 function summonMonsters() {
-    currentDiv = document.getElementById("monster");
-    var moarMon = document.createElement("img");
-    moarMon.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
-    moarMon.setAttribute('alt',"found on google, made by puqqie");
-    currentDiv.appendChild(moarMon);
-    // Add Monster HP
-    // Add Monster Iniative
-    // Use generator to randomnize the monster type and pull correct image
-    // Tie each roll to a number in order to allow removal
+    box3 = document.getElementById("fillIn3");
+    if (box3.value==="-1"){
+        alert('You haven\'t filled in challenge level.');
+        box3.focus();
+    } else {
+      // Use generator to randomnize the monster type based on challenge rating
+      challenge = box3.value;
+      // and pull correct monster info including image
+      // need to figure out how I want to store monster data
+      // Add Monster Iniative
+      dicevalue = 20;
+      init = getRandomNumber();
+      // Add Monster HP based on challenge rating
+      currentDiv = document.getElementById("monster");
+      var moarMon = document.createElement("img");
+      moarMon.setAttribute('src',"http://orig14.deviantart.net/c7f1/f/2015/105/2/3/unicorn_icon_by_puqqie-d8prrt7.png");
+      moarMon.setAttribute('alt',"found on google, made by puqqie");
+      currentDiv.appendChild(moarMon);
+      // Tie each roll to a number in order to allow removal
+    }
 }
 function banMonsters() {
       // Pull specific roll based on removal button
@@ -111,7 +122,7 @@ document.getElementById("cleton2").onclick = removeRolls2;
 document.getElementById("sumMon").onclick = summonMonsters;
 document.getElementById("banMon").onclick = banMonsters;
 
-// dice themesfgjhkdl
+// dice themes
 $('#uniDie').click(function() {
     $('.diceColor').removeClass("mothDice nesDice fooDice").addClass('uniDice');
 });
