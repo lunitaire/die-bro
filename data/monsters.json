@@ -1,0 +1,18 @@
+[
+  {
+    "monster" : "kobold",
+    "hp" : "25",
+  },
+  {
+  "monster" : "goblin",
+  "hp" : "50"
+  },
+  {
+  "monster" : "hobgoblin",
+  "hp" : "100"
+  },
+  {
+  "monster" : "bugbear",
+  "hp" : "200"
+  },
+]
