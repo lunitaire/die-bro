@@ -1,18 +1,116 @@
 [
   {
-    "monster" : "kobold",
-    "hp" : "25",
+    "challenge" : "0",
+    "monsters" : [
+      {
+        "monster" : "Kobold",
+        "hp" : "25"
+      },
+      {
+        "monster" : "Winged Kobold",
+        "hp" : "50"
+      },
+      {
+      "monster" : "Goblin",
+      "hp" : "50"
+      },
+      {
+      "monster" : "Hobgoblin",
+      "hp" : "100"
+      }
+    ]
   },
   {
-  "monster" : "goblin",
-  "hp" : "50"
+    "challenge" : "1",
+    "monsters" : [
+      {
+      "monster" : "Goblin Boss",
+      "hp" : "200"
+      },
+      {
+      "monster" : "Bugbear",
+      "hp" : "200"
+    },
+    {
+      "monster" : "Half-Ogre",
+      "hp" : "200"
+    },
+    {
+    "monster" : "Specter",
+    "hp" : "200"
+    }
+    ]
   },
   {
-  "monster" : "hobgoblin",
-  "hp" : "100"
+    "challenge" : "2",
+    "monsters" : [
+      {
+        "monster" : "Gelatinous Cube",
+        "hp" : "450"
+      },
+      {
+      "monster" : "Griffin",
+      "hp" : "450"
+      },
+      {
+      "monster" : "Wererat",
+      "hp" : "450"
+      },
+      {
+      "monster" : "Will-o'-Wisp",
+      "hp" : "450"
+      },
+      {
+      "monster" : "Mimic",
+      "hp" : "450"
+      }
+    ]
   },
   {
-  "monster" : "bugbear",
-  "hp" : "200"
+    "challenge" : "3",
+    "monsters" : [
+      {
+        "monster" : "Bugbear Chief",
+        "hp" : "700"
+      },
+      {
+      "monster" : "Hobgoblin Captain",
+      "hp" : "700"
+      },
+      {
+      "monster" : "Owlbear",
+      "hp" : "700"
+      },
+      {
+      "monster" : "Hell Hound",
+      "hp" : "700"
+      }
+    ]
   },
+  {
+    "challenge" : "4",
+    "monsters" : [
+      {
+        "monster" : "Wereboar",
+        "hp" : "1100"
+      },
+      {
+      "monster" : "Weretiger",
+      "hp" : "1100"
+      }
+    ]
+  },
+  {
+    "challenge" : "5",
+    "monsters" : [
+      {
+        "monster" : "Unicorn",
+        "hp" : "1800"
+      },
+      {
+      "monster" : "Werebear",
+      "hp" : "1800"
+      }
+    ]
+  }
 ]

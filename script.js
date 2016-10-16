@@ -89,7 +89,7 @@ function removeRolls2() {
 function summonMonsters() {
     box3 = document.getElementById("fillIn3");
     if (box3.value==="-1"){
-        alert('You haven\'t filled in challenge level.');
+        alert('You haven\'t filled in the challenge level.');
         box3.focus();
     } else {
       // Use generator to randomnize the monster type based on challenge rating
