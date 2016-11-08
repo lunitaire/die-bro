@@ -93,7 +93,7 @@ function summonMonsters() {
         box3.focus();
     } else {
       // Use generator to randomnize the monster type based on challenge rating
-      challenge = box3.value;
+      challengeLevel = box3.value;
       // and pull correct monster info including image
       // need to figure out how I want to store monster data
       // Add Monster Iniative
