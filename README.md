@@ -6,8 +6,9 @@ Do you even Die, bro? The Varied Die Roller Of Mythic Proportions
 #### Current planned changes for the future include:
 * Replace Unicorn placeholder image with Unicorn icon.
 * Make other monster icons.
+* Build database of monsters. 
 * Add logic to summon random monsters.
-* ~~Change Summon Unicorns to Monsters.~~
+* Change Summon Unicorns to Monsters.
 * Set monsters to roll HP and Initiative.
 * Add about button that opens to explanation.
 * Replace dice image placeholders with finals.
