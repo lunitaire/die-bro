@@ -29,6 +29,10 @@ header h1 {
     text-align: center;
     padding: 10px 0px;
 }
+
+header p {
+    font: 14px/16px;
+}
 footer p {
         padding: 10px;
 }
